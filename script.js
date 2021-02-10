@@ -53,16 +53,49 @@
 
 // functions declarations and expressions
 
+// // function declaration
+// function calcAge1(birthYear) {
+//     return 2021 - birthYear
+// }
+
+// const aliAge = calcAge1(1998);
+
+// // function expression
+// const calcAge2 = function (birthYear) {
+//     return 2021 - birthYear
+// }
+
+// const jianaAge = calcAge2(1996);
+
+// console.log(aliAge, jianaAge);
+
+// =============================================== //
+
+// Arrow Function
+
+// ======================= //
+
 function calcAge1(birthYear) {
     return 2021 - birthYear
 }
 
-const aliAge = calcAge1(1998);
+// vs
 
 const calcAge2 = function (birthYear) {
     return 2021 - birthYear
 }
 
-const jianaAge = calcAge2(1996);
+// vs
 
-console.log(aliAge, jianaAge);
+const CalcAge3 = birthYear => 2021 - birthYear;
+
+const youssefAge = CalcAge3(2008)
+console.log(youssefAge);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2021 - birthYear;
+    const retirement = 64 - age;
+    return `${firstName} retires in ${retirement} years`
+}
+
+console.log(yearsUntilRetirement(2008, `Youssef`));
