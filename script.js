@@ -35,17 +35,34 @@
 
 // Functions Assignment
 
-function describeCountry(country, population, capitalCity) {
-    const chosenCountry = `${country} has ${population} million people and its capital city is ${capitalCity}`;
-    return chosenCountry;
+// function describeCountry(country, population, capitalCity) {
+//     const chosenCountry = `${country} has ${population} million people and its capital city is ${capitalCity}`;
+//     return chosenCountry;
+// }
+
+// const lebanon = describeCountry(`Lebanon`, `5-6`, `Beirut`);
+// console.log(lebanon);
+
+// const italy = describeCountry(`Italy`, 60, `Roma`)
+// console.log(italy);
+
+// const USA = describeCountry(`USA`, 330, `DC`);
+// console.log(USA);
+
+// =============================================== //
+
+// functions declarations and expressions
+
+function calcAge1(birthYear) {
+    return 2021 - birthYear
 }
 
-const lebanon = describeCountry(`Lebanon`, `5-6`, `Beirut`);
-console.log(lebanon);
+const aliAge = calcAge1(1998);
 
-const italy = describeCountry(`Italy`, 60, `Roma`)
-console.log(italy);
+const calcAge2 = function (birthYear) {
+    return 2021 - birthYear
+}
 
-const USA = describeCountry(`USA`, 330, `DC`);
-console.log(USA);
+const jianaAge = calcAge2(1996);
 
+console.log(aliAge, jianaAge);
