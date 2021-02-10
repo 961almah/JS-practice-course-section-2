@@ -106,16 +106,39 @@
 
 // ======================= //
 
-function cutFruitPieces(fruit) {
-    return fruit * 4;
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
+
+//     const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`;
+//     return juice;
+// }
+
+// console.log(fruitProcessor(2, 3));
+
+// =============================================== //
+
+const calcAge = function (birthYear) {
+    return 2021 - birthYear
 }
 
-function fruitProcessor(apples, oranges) {
-    const applePieces = cutFruitPieces(apples);
-    const orangePieces = cutFruitPieces(oranges);
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear)
+    const retirement = 64 - age;
 
-    const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`;
-    return juice;
+    if (retirement > 0) {
+        return retirement
+    } else {
+        return -1
+    }
+    // return `${firstName} retires in ${retirement} years`;
 }
 
-console.log(fruitProcessor(2, 3));
+console.log(yearsUntilRetirement(1998, `Ali`));
+console.log(yearsUntilRetirement(1996, `Jiana`));
+
+// =============================================== //
