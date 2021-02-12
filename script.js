@@ -196,44 +196,75 @@
 
 // Arrays 
 
-const friend1 = 'Michael'
-const friend2 = 'Steven'
-const friend3 = 'Peter'
+// const friend1 = 'Michael'
+// const friend2 = 'Steven'
+// const friend3 = 'Peter'
 
-const friends = [`Michael`, `Steven`, `Peter`]
-console.log(friends);
+// const friends = [`Michael`, `Steven`, `Peter`]
+// console.log(friends);
 
-// const years = new Array(1996, 1998, 2021);
-// console.log(years);
+// // const years = new Array(1996, 1998, 2021);
+// // console.log(years);
 
-console.log(friends[0]);
-console.log(friends.length);
+// console.log(friends[0]);
+// console.log(friends.length);
 
-console.log(friends[friends.length - 1]);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = `Jay`
-console.log(friends);
+// friends[2] = `Jay`
+// console.log(friends);
 
-const firstName = `Ali`
-const ali = [firstName, `Mahmoud`, 2021 - 1998, `programmer`, friends]
-console.log(ali);
+// const firstName = `Ali`
+// const ali = [firstName, `Mahmoud`, 2021 - 1998, `programmer`, friends]
+// console.log(ali);
 
-// exercise
+// // exercise
 
-const calcAge = function (birthYear) {
-    return 2021 - birthYear
-}
+// const calcAge = function (birthYear) {
+//     return 2021 - birthYear
+// }
 
-const years = [1996, 1998, 2020, 2021];
+// const years = [1996, 1998, 2020, 2021];
 
-// console.log(calcAge(years[0]));
+// // console.log(calcAge(years[0]));
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
 
-console.log(age1, age2, age3);
+// console.log(age1, age2, age3);
 
-const ages = [age1, age2, age3]
+// const ages = [age1, age2, age3]
 
-console.log(ages);
+// console.log(ages);
+
+// ============================================== //
+
+// const friends = [`Michael`, `Steven`, `Peter`]
+
+// const newLength = friends.push(`Jay`)
+
+// console.log(friends);
+// console.log(newLength);
+
+// friends.unshift(`John`)
+// console.log(friends);
+
+// friends.pop();
+// console.log(friends);
+
+// friends.shift();
+// console.log(friends);
+
+// const popped = friends.pop();
+
+// console.log(friends.indexOf(`Steven`));
+// console.log(friends.includes(`Bob`));
+
+// if (friends.includes(`Steven`)) {
+//     console.log(`You have a friend called Steven`);
+// }
+
+// Methods
+
+// ============================================== //
