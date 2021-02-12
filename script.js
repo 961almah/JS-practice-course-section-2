@@ -365,43 +365,91 @@
 
 // ======================== //
 
+// const aliObject = {
+//     firstName: `Ali`,
+//     lastName: `Mahmoud`,
+//     birthYear: 1998,
+//     job: `programmer`,
+//     friends: [`Michael`, `Peter`, `Steven`],
+//     hasDriversLicense: false,
+//     // calcAge: function (birthYear) {
+//     //     return 2021 - birthYear
+//     // }
+//     // calcAge: function () {
+//     //     // console.log(this);
+//     //     return 2021 - this.birthYear
+//     // }
+//     calcAge: function () {
+//         this.age = 2021 - this.birthYear;
+//         return this.age;
+//     },
+//     // getSummary: function () {
+//     //     if (this.hasDriversLicense === true) {
+//     //         console.log(`${this.firstName} is a ${this.age}-year old programmer, and he has a driver's license`);
+//     //     } else {
+//     //         console.log(`${this.firstName} is a ${this.age}-year old programmer, and he does not have a driver's license`);
+//     //     }
+//     // }
+//     getSummary: function () {
+//         return `${this.firstName} is a ${this.age}-year old ${this.job}, and he has ${this.hasDriversLicense ? `a` : `no`} driver's license`
+//     }
+// }
 
+// console.log(aliObject.calcAge());
 
-const aliObject = {
-    firstName: `Ali`,
-    lastName: `Mahmoud`,
-    birthYear: 1998,
-    job: `programmer`,
-    friends: [`Michael`, `Peter`, `Steven`],
-    hasDriversLicense: false,
-    // calcAge: function (birthYear) {
-    //     return 2021 - birthYear
-    // }
-    // calcAge: function () {
-    //     // console.log(this);
-    //     return 2021 - this.birthYear
-    // }
-    calcAge: function () {
-        this.age = 2021 - this.birthYear;
-        return this.age;
-    },
-    // getSummary: function () {
-    //     if (this.hasDriversLicense === true) {
-    //         console.log(`${this.firstName} is a ${this.age}-year old programmer, and he has a driver's license`);
-    //     } else {
-    //         console.log(`${this.firstName} is a ${this.age}-year old programmer, and he does not have a driver's license`);
-    //     }
-    // }
-    getSummary: function () {
-        return `${this.firstName} is a ${this.age}-year old ${this.job}, and he has ${this.hasDriversLicense ? `a` : `no`} driver's license`
+// console.log(aliObject.age);
+// // console.log(aliObject[`calcAge`](1998));
+
+// // challenge
+
+// console.log(aliObject.getSummary());
+
+// ================================================ //
+
+// coding challenge #3
+
+// ================== //
+
+/*
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+GOOD LUCK 😀
+*/
+
+const johnObject = {
+    firstName: `John`,
+    lastName: `Smith`,
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        return this.BMI = this.mass / (this.height ** 2)
     }
 }
 
-console.log(aliObject.calcAge());
+const markObject = {
+    firstName: `Mark`,
+    lastName: `Miller`,
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        return this.BMI = this.mass / (this.height ** 2)
+    }
+}
 
-console.log(aliObject.age);
-// console.log(aliObject[`calcAge`](1998));
+console.log(markObject.calcBMI());
+console.log(johnObject.calcBMI());
 
-// challenge
+if (johnObject.BMI > markObject.BMI) {
+    console.log(`John Smith's BMI (${johnObject.BMI}) is higher than Mark Miller's BMI (${markObject.BMI})`)
+} else {
+    console.log(`John Smith's BMI (${johnObject.BMI}) is lower than Mark Miller's BMI (${markObject.BMI})`)
+}
 
-console.log(aliObject.getSummary());
+console.log(markObject.BMI);
+// console.log(johnObject.BMI);
