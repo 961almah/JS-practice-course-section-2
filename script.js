@@ -303,17 +303,54 @@
 
 // ===================
 
-const aliArray = [
-    `Ali`,
-    `Mahmoud`,
-    2021 - 1998,
-    `programmer`,
-    [`Michael`, `Peter`, `Steven`]
-]
+// const aliArray = [
+//     `Ali`,
+//     `Mahmoud`,
+//     2021 - 1998,
+//     `programmer`,
+//     [`Michael`, `Peter`, `Steven`]
+// ]
+
+// const aliObject = {
+//     firstName: `Ali`,
+//     lastName: `Mahmoud`,
+//     age: 21,
+//     job: `programmer`,
+//     friends: [`Michael`, `Peter`, `Steven`]
+// }
+
+// ================================================ //
+
+// Dot vs Bracket Notation
+
+// ======================
 
 const aliObject = {
     firstName: `Ali`,
     lastName: `Mahmoud`,
     age: 21,
-    job: programmer
+    job: `programmer`,
+    friends: [`Michael`, `Peter`, `Steven`]
 }
+console.log(aliObject);
+
+console.log(aliObject.lastName);
+console.log(aliObject[`lastName`]);
+
+const nameKey = `Name`;
+console.log(aliObject[`first` + nameKey]);
+console.log(aliObject[`last` + nameKey]);
+
+const interestedIn = prompt(`what do you want to know about Ali? choose between firstName, lastName, age, job, and friends`);
+
+
+if (aliObject[interestedIn]) {
+    console.log(aliObject[interestedIn]);
+} else {
+    console.log(`wrong request`);
+}
+
+aliObject.location = `New York`;
+aliObject[`birthPlace`] = `Beirut`;
+
+console.log(aliObject);
