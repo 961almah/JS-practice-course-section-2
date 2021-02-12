@@ -325,21 +325,21 @@
 
 // ======================
 
-const aliObject = {
-    firstName: `Ali`,
-    lastName: `Mahmoud`,
-    age: 21,
-    job: `programmer`,
-    friends: [`Michael`, `Peter`, `Steven`]
-}
-console.log(aliObject);
+// const aliObject = {
+//     firstName: `Ali`,
+//     lastName: `Mahmoud`,
+//     age: 21,
+//     job: `programmer`,
+//     friends: [`Michael`, `Peter`, `Steven`]
+// }
+// console.log(aliObject);
 
-console.log(aliObject.lastName);
-console.log(aliObject[`lastName`]);
+// console.log(aliObject.lastName);
+// console.log(aliObject[`lastName`]);
 
-const nameKey = `Name`;
-console.log(aliObject[`first` + nameKey]);
-console.log(aliObject[`last` + nameKey]);
+// const nameKey = `Name`;
+// console.log(aliObject[`first` + nameKey]);
+// console.log(aliObject[`last` + nameKey]);
 
 // const interestedIn = prompt(`what do you want to know about Ali? choose between firstName, lastName, age, job, and friends`);
 
@@ -355,6 +355,39 @@ console.log(aliObject[`last` + nameKey]);
 
 // console.log(aliObject);
 
-// challenge
+// challenge 
 
-console.log(`${aliObject.firstName} has ${aliObject.friends.length} friends, and his best friend is ${aliObject.friends[0]}`);
+// console.log(`${aliObject.firstName} has ${aliObject.friends.length} friends, and his best friend is ${aliObject.friends[0]}`);
+
+// ================================================ //
+
+// Objects methods
+
+// ======================== //
+
+
+
+const aliObject = {
+    firstName: `Ali`,
+    lastName: `Mahmoud`,
+    birthYear: 1998,
+    job: `programmer`,
+    friends: [`Michael`, `Peter`, `Steven`],
+    hasDriversLicense: false,
+    // calcAge: function (birthYear) {
+    //     return 2021 - birthYear
+    // }
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2021 - this.birthYear
+    // }
+    calcAge: function () {
+        this.age = 2021 - this.birthYear;
+        return this.age;
+    }
+}
+
+console.log(aliObject.calcAge());
+
+console.log(aliObject.age);
+// console.log(aliObject[`calcAge`](1998));
