@@ -192,4 +192,48 @@
 
 // checkWinner(scoreDolphins, scoreKoalas);
 
-// 
+// ============================================== //
+
+// Arrays 
+
+const friend1 = 'Michael'
+const friend2 = 'Steven'
+const friend3 = 'Peter'
+
+const friends = [`Michael`, `Steven`, `Peter`]
+console.log(friends);
+
+// const years = new Array(1996, 1998, 2021);
+// console.log(years);
+
+console.log(friends[0]);
+console.log(friends.length);
+
+console.log(friends[friends.length - 1]);
+
+friends[2] = `Jay`
+console.log(friends);
+
+const firstName = `Ali`
+const ali = [firstName, `Mahmoud`, 2021 - 1998, `programmer`, friends]
+console.log(ali);
+
+// exercise
+
+const calcAge = function (birthYear) {
+    return 2021 - birthYear
+}
+
+const years = [1996, 1998, 2020, 2021];
+
+// console.log(calcAge(years[0]));
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [age1, age2, age3]
+
+console.log(ages);
