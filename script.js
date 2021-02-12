@@ -341,16 +341,20 @@ const nameKey = `Name`;
 console.log(aliObject[`first` + nameKey]);
 console.log(aliObject[`last` + nameKey]);
 
-const interestedIn = prompt(`what do you want to know about Ali? choose between firstName, lastName, age, job, and friends`);
+// const interestedIn = prompt(`what do you want to know about Ali? choose between firstName, lastName, age, job, and friends`);
 
 
-if (aliObject[interestedIn]) {
-    console.log(aliObject[interestedIn]);
-} else {
-    console.log(`wrong request`);
-}
+// if (aliObject[interestedIn]) {
+//     console.log(aliObject[interestedIn]);
+// } else {
+//     console.log(`wrong request`);
+// }
 
-aliObject.location = `New York`;
-aliObject[`birthPlace`] = `Beirut`;
+// aliObject.location = `New York`;
+// aliObject[`birthPlace`] = `Beirut`;
 
-console.log(aliObject);
+// console.log(aliObject);
+
+// challenge
+
+console.log(`${aliObject.firstName} has ${aliObject.friends.length} friends, and his best friend is ${aliObject.friends[0]}`);
