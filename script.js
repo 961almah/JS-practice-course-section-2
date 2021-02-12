@@ -384,6 +384,16 @@ const aliObject = {
     calcAge: function () {
         this.age = 2021 - this.birthYear;
         return this.age;
+    },
+    // getSummary: function () {
+    //     if (this.hasDriversLicense === true) {
+    //         console.log(`${this.firstName} is a ${this.age}-year old programmer, and he has a driver's license`);
+    //     } else {
+    //         console.log(`${this.firstName} is a ${this.age}-year old programmer, and he does not have a driver's license`);
+    //     }
+    // }
+    getSummary: function () {
+        return `${this.firstName} is a ${this.age}-year old ${this.job}, and he has ${this.hasDriversLicense ? `a` : `no`} driver's license`
     }
 }
 
@@ -391,3 +401,7 @@ console.log(aliObject.calcAge());
 
 console.log(aliObject.age);
 // console.log(aliObject[`calcAge`](1998));
+
+// challenge
+
+console.log(aliObject.getSummary());
