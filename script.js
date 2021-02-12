@@ -284,15 +284,36 @@
 
 // GOOD LUCK 😀
 
-const calcTip = function (bill) {
-    return bill >= 50 <= 300 ? bill * (15 / 100) : bill * (20 / 100);
+// const calcTip = function (bill) {
+//     return bill >= 50 <= 300 ? bill * (15 / 100) : bill * (20 / 100);
+// }
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+
+// console.log(bills, tips);
+
+// const totals = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
+
+// console.log(totals);
+
+// ================================================ //
+
+// Intro to Objects
+
+// ===================
+
+const aliArray = [
+    `Ali`,
+    `Mahmoud`,
+    2021 - 1998,
+    `programmer`,
+    [`Michael`, `Peter`, `Steven`]
+]
+
+const aliObject = {
+    firstName: `Ali`,
+    lastName: `Mahmoud`,
+    age: 21,
+    job: programmer
 }
-
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
-
-console.log(bills, tips);
-
-const totals = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
-
-console.log(totals);
