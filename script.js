@@ -406,50 +406,219 @@
 
 // ================================================ //
 
-// coding challenge #3
+// // coding challenge #3
+
+// // ================== //
+
+// /*
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+
+// 1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+// 2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
+// 3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+// TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+// GOOD LUCK 😀
+// */
+
+// const johnObject = {
+//     firstName: `John`,
+//     lastName: `Smith`,
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         return this.BMI = this.mass / (this.height ** 2)
+//     }
+// }
+
+// const markObject = {
+//     firstName: `Mark`,
+//     lastName: `Miller`,
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         return this.BMI = this.mass / (this.height ** 2)
+//     }
+// }
+
+// console.log(markObject.calcBMI());
+// console.log(johnObject.calcBMI());
+
+// if (johnObject.BMI > markObject.BMI) {
+//     console.log(`John Smith's BMI (${johnObject.BMI}) is higher than Mark Miller's BMI (${markObject.BMI})`)
+// } else {
+//     console.log(`John Smith's BMI (${johnObject.BMI}) is lower than Mark Miller's BMI (${markObject.BMI})`)
+// }
+
+// console.log(markObject.BMI);
+// console.log(johnObject.BMI);
+
+// =============================================== //
+
+// iteration: the for loop
+
+// ========================== //
+
+// console.log(`lifting weights repition 1`);
+// console.log(`lifting weights repition 2`);
+// console.log(`lifting weights repition 3`);
+// console.log(`lifting weights repition 4`);
+// console.log(`lifting weights repition 5`);
+// console.log(`lifting weights repition 6`);
+// console.log(`lifting weights repition 7`);
+// console.log(`lifting weights repition 8`);
+// console.log(`lifting weights repition 9`);
+// console.log(`lifting weights repition 10`);
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`lifting weight repitition ${rep}`);
+// }
+
+// =============================================== //
+
+// looping arrays, breaking and continuing
+
+// =============== //
+
+// const aliArray = [
+//     `Ali`,
+//     `Mahmoud`,
+//     2021 - 1998,
+//     `programmer`,
+//     [`Michael`, `Peter`, `Steven`],
+//     true
+// ]
+
+// const types = [];
+
+// for (let i = 0; i < aliArray.length; i++) {
+//     console.log(aliArray[i]);
+
+//     // filling types array
+//     // types[i] = typeof aliArray[i];
+
+//     types.push(typeof aliArray[i])
+// }
+// console.log(types);
+
+// const years = [1996, 1998, 2008, 2020, 2021];
+
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2021 - years[i]);
+// }
+
+// console.log(ages);
+
+// continue and break
+
+// console.log(`----------ONLY STRINGS----------`);
+// for (let i = 0; i < aliArray.length; i++) {
+//     if (typeof aliArray[i] != `string`) continue;
+//     console.log(aliArray[i]);
+// }
+
+// console.log(`----------BREAK WITH NUMBER----------`);
+// for (let i = 0; i < aliArray.length; i++) {
+//     if (typeof aliArray[i] === `number`) break;
+//     console.log(aliArray[i]);
+// }
+
+// =============================================== //
+
+// looping backwards and loops in loops 
+
+// ========================== //
+
+// const aliArray = [
+//     `Ali`,
+//     `Mahmoud`,
+//     2021 - 1998,
+//     `programmer`,
+//     [`Michael`, `Peter`, `Steven`]
+// ];
+
+// for (i = aliArray.length - 1; i >= 0; i--) {
+//     console.log(aliArray[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`==== starting exercise ${exercise}`);
+
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Exercise ${exercise}: lifting weight repition ${rep}`);
+//     }
+// }
+
+// ===============================================
+
+// the while loop 
 
 // ================== //
 
-/*
-Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`FOR: lifting weight repitition ${rep}`);
+// };
 
-1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
-2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
-3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`WHILE: lifting weight repitition ${rep}`);
+//     rep++
+// }
 
-TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-GOOD LUCK 😀
-*/
+// while (dice !== 6) {
+//     console.log(`${dice}, roll again`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log(`bingo`);
+// }
 
-const johnObject = {
-    firstName: `John`,
-    lastName: `Smith`,
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-        return this.BMI = this.mass / (this.height ** 2)
+// =============================================== //
+
+// coding challenge #4 
+
+// ====================== //
+
+const calcTip = function (bill) {
+    return bill >= 50 <= 300 ? bill * (15 / 100) : bill * (20 / 100);
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+
+const totals = [];
+
+
+for (i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i])
+    tips.push(tip)
+    totals.push(tip + bills[i])
+}
+
+
+console.log(bills, tips, totals);
+
+// bonus
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // sum = sum + arr[i]
+        sum += arr[i];
     }
+    return sum / arr.length;
 }
 
-const markObject = {
-    firstName: `Mark`,
-    lastName: `Miller`,
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-        return this.BMI = this.mass / (this.height ** 2)
-    }
-}
 
-console.log(markObject.calcBMI());
-console.log(johnObject.calcBMI());
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
 
-if (johnObject.BMI > markObject.BMI) {
-    console.log(`John Smith's BMI (${johnObject.BMI}) is higher than Mark Miller's BMI (${markObject.BMI})`)
-} else {
-    console.log(`John Smith's BMI (${johnObject.BMI}) is lower than Mark Miller's BMI (${markObject.BMI})`)
-}
 
-console.log(markObject.BMI);
-// console.log(johnObject.BMI);
+
+
+const x = 23
